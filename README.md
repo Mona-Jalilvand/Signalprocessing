@@ -31,9 +31,9 @@ Process seismic signals to identify subsurface features like oil and gas reservo
 
    Seismic signals are typically modeled as a combination of the actual signal (from reflections) and noise. The goal is to process the signal \( s(t) \) to identify key features such as wave arrival times and amplitudes. The model can be expressed as:
 
-   \[
+   $
    s(t) = r(t) + n(t)
-   \]
+   $
    
    where:
    - \( s(t) \) is the recorded signal.
@@ -47,9 +47,9 @@ Process seismic signals to identify subsurface features like oil and gas reservo
 
      The continuous Fourier transform of a time-domain signal \( x(t) \) is given by:
 
-     \[
+     $
      X(f) = \int_{-\infty}^{\infty} x(t) e^{-i2\pi f t} \, dt
-     \]
+     $
 
      In practice, we use the **Discrete Fourier Transform (DFT)**, typically computed using the **Fast Fourier Transform (FFT)** algorithm.
 
@@ -58,9 +58,9 @@ Process seismic signals to identify subsurface features like oil and gas reservo
 
      The continuous wavelet transform of a signal \( x(t) \) with a wavelet \( \psi(t) \) is defined as:
 
-     \[
+     $
      W(a,b) = \frac{1}{\sqrt{a}} \int_{-\infty}^{\infty} x(t) \psi^*\left(\frac{t - b}{a}\right) \, dt
-     \]
+     $
 
      Here, \( a \) is the scale (inverse of frequency), and \( b \) is the time shift.
 

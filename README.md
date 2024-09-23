@@ -46,10 +46,11 @@ Process seismic signals to identify subsurface features like oil and gas reservo
      Seismic signals are often transformed from the time domain to the frequency domain using the Fourier Transform, which helps identify noise and useful frequency components.
 
      The continuous Fourier transform of a time-domain signal \( x(t) \) is given by:
-
+     $$
      \begin{equation}
      X(f) = \int_{-\infty}^{\infty} x(t) e^{-i2\pi f t} \, dt
      \end{equation}
+     $$
 
      In practice, we use the **Discrete Fourier Transform (DFT)**, typically computed using the **Fast Fourier Transform (FFT)** algorithm.
 
